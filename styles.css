@@ -67,3 +67,8 @@ body.education-page .page-hero .shell,body.education-page .content.shell{padding
 /* Global left text inset: matches the Education page on every page. */
 .home-hero .shell,.page-hero .shell,.content.shell,.home-map.shell,footer .shell{padding-left:3rem}
 @media(max-width:800px){.home-hero .shell,.page-hero .shell,.content.shell,.home-map.shell,footer .shell{padding-left:2rem}}
+/* Home-page professional introduction. */
+.home-intro{padding-top:82px;padding-bottom:82px}
+.home-intro h2{margin-bottom:26px}
+.home-intro>p:not(.overline){max-width:820px;margin:0 0 18px;color:#d8ddd9;font-size:17px;line-height:1.9}
+.home-intro>p:last-child{margin-bottom:0}
