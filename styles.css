@@ -46,3 +46,9 @@ footer{position:relative;background:rgba(2,3,4,.89);color:#c8ccc8;border-color:r
 /* Education page only: 3rem space before all main text. */
 body.education-page .page-hero .shell,body.education-page .content.shell{padding-left:3rem}
 @media(max-width:800px){body.education-page .page-hero .shell,body.education-page .content.shell{padding-left:2rem}}
+/* Education fields: labels and values must never run together. */
+.education-card dl{display:grid;grid-template-columns:minmax(7.5rem,.28fr) minmax(0,1fr);column-gap:3rem}
+.education-card dt,.education-card dd{display:block;width:auto;margin:0;padding:18px 0}
+.education-card dt{padding-right:1rem}
+.education-card dd{padding-left:0}
+@media(max-width:800px){.education-card dl{grid-template-columns:1fr;column-gap:0}.education-card dt{padding:20px 0 5px;border-bottom:0!important}.education-card dd{padding:0 0 20px}.education-card dd:last-child{padding-bottom:20px}}
