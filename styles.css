@@ -3,3 +3,31 @@
 .experience-panel{margin-top:34px;padding-top:0;border-top:0}.experience-panel h2{margin-top:0}
 /* Subtle research visual fields. */
 .home-hero,.thesis-hero,.page-hero.dark,.page-hero.paper{color:var(--ink);background-color:#fff;background-size:1320px auto;background-repeat:repeat-x;background-position:center center;border-bottom:1px solid var(--line);animation:scientific-drift 82s ease-in-out infinite alternate}.home-hero,.thesis-hero{background-image:url("assets/neural-field.svg")}.page-hero.dark,.page-hero.paper{background-image:url("assets/graph-field.svg")}.home-hero:before,.thesis-hero:before,.page-hero.dark:before{display:none}.home-hero .overline,.thesis-hero .overline,.page-hero.dark .overline{color:#666}.home-hero .lede,.thesis-hero .lede,.page-hero.dark .lede,.thesis-meta{color:#4f4f4f}.dual-identity{background:rgba(255,255,255,.86);border-color:#cfcfcf}.dual-identity a{border-color:#cfcfcf}.dual-identity a:hover{background:#f9f9f9}.dual-identity span{color:#777}.dual-identity small{color:#555}.dual-identity strong,.dual-identity b{color:#1c1c1c}.dual-identity a:last-child{border-right:0}@keyframes scientific-drift{from{background-position:46% 50%}to{background-position:54% 50%}}@media(prefers-reduced-motion:reduce){.home-hero,.thesis-hero,.page-hero.dark,.page-hero.paper{animation:none}}
+/* Full-page dark research environment. */
+html{background:#030405}
+body{position:relative;isolation:isolate;background:transparent;color:#e9ece9;font-family:Arial,"Helvetica Neue",sans-serif;font-size:17px;line-height:1.72}
+body:before,body:after{content:"";position:fixed;inset:0;pointer-events:none}
+body:before{z-index:-2;background:#050607 url("assets/systems-field.png") center top/cover no-repeat;filter:grayscale(1) contrast(1.05)}
+body:after{z-index:-1;background:rgba(2,3,4,.62)}
+body.theme-neural:before{background-image:url("assets/thesis-neuromorphic.png")}
+body.theme-agent:before{background-image:url("assets/agentic-graph.png")}
+body.theme-systems:before{background-image:url("assets/systems-field.png")}
+.site-head{position:relative;background:rgba(3,4,5,.90);border-color:rgba(255,255,255,.19);backdrop-filter:blur(12px)}
+.brand,.brand span{color:#f5f5f1}.navlinks{color:#e7e9e6}.navlinks a:hover{border-color:#fff}.menu{color:#f3f3ee;background:transparent}
+.skip{background:#050607;color:#fff;border-color:#fff}
+.home-hero,.page-hero,.thesis-hero,.page-hero.dark,.page-hero.paper{position:relative;isolation:isolate;min-height:430px;color:#f7f7f2;background:rgba(3,5,6,.50)!important;background-image:none!important;border-color:rgba(255,255,255,.23);animation:none}
+.home-hero h1,.page-hero h1{color:#fbfbf7;font-family:Georgia,"Times New Roman",serif;text-shadow:0 2px 18px #000}
+.home-hero h1 em,.page-hero h1 em{color:#fff}.overline,.home-hero .overline,.thesis-hero .overline,.page-hero.dark .overline{color:#c6cbc7}.lede,.home-hero .lede,.thesis-hero .lede,.page-hero.dark .lede,.thesis-meta{color:#e1e5e1;text-shadow:0 1px 10px #000}
+.dual-identity{background:rgba(2,3,4,.66);border-color:rgba(255,255,255,.38);backdrop-filter:blur(5px)}
+.dual-identity a{border-color:rgba(255,255,255,.28)}.dual-identity a:hover{background:rgba(255,255,255,.10)}.dual-identity span{color:#c4cac5}.dual-identity small{color:#e4e7e3}.dual-identity strong,.dual-identity b{color:#fff}
+.home-map,.content{position:relative;background:rgba(3,4,5,.78);box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.home-map h2,.content h2,.experience-panel h2,.project-list h2,.pubs h2,.teaching-grid h2{color:#fafaf5;font-family:Georgia,"Times New Roman",serif}
+.page-grid,.page-grid a,.capabilities,.capabilities span,.flow,.callout,.four-up,.four-up div,.education-card dl,.education-card dt,.education-card dd,.project-list article,.pubs article,.teaching-grid article,.teaching-grid ul,.teaching-grid li,.contact-page a,.experience-panel,.experience-panel ul,.experience-panel li,.skill-matrix,.skill-matrix div,.references,.reference-list,.reference-list article{border-color:rgba(255,255,255,.22)!important}
+.page-grid a,.flow div,.flow i,.callout h3,.four-up b,.education-card .field,.education-card dd,.project-list b,.project-list a,.pubs a,.contact-page a,.contact-page b,.skill-matrix b,.reference-list b{color:#f3f4ef!important}
+.page-grid span,.detail-grid aside p:last-child,.capabilities span,.flow small,.four-up p,.institution,.education-card dt,.project-list article>span,.pubs article>span,.project-list p,.pubs p:not(.overline),.teaching-grid li span,.contact-page span,.experience-panel>p:not(.overline),.experience-panel li,.skill-matrix span,.reference-list span,.reference-list a,.callout p:last-child,.detail-grid>div>p:not(.overline){color:#d1d6d2!important}
+.project-list p,.pubs p:not(.overline),.detail-grid>div>p:not(.overline),.experience-panel>p:not(.overline){text-shadow:0 1px 7px #000}
+.pubs a,.reference-list a,.contact-page a{text-decoration-color:rgba(255,255,255,.55)}
+.flow,.callout{border-color:rgba(255,255,255,.4)!important}.callout + .experience-panel .overline{color:#d1d6d2!important}
+footer{position:relative;background:rgba(2,3,4,.89);color:#c8ccc8;border-color:rgba(255,255,255,.18)}
+@media(max-width:800px){.navlinks{background:#050607;border-color:rgba(255,255,255,.2)}.home-hero,.page-hero,.thesis-hero{min-height:0}.home-map,.content{background:rgba(3,4,5,.84)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
