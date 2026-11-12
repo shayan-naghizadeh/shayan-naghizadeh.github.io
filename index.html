@@ -3,132 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101820">
-  <meta name="description" content="Shayan Naghizadeh — AI systems and computer architecture. Efficient inference, hardware-aware machine learning, FPGA acceleration, and agentic systems.">
+  <meta name="theme-color" content="#0a1114">
+  <meta name="description" content="Shayan Naghizadeh — computer architecture researcher and AI systems engineer, from neuromorphic hardware to private agentic AI.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Shayan Naghizadeh — AI × Hardware">
-  <meta property="og:description" content="Connecting intelligent models with the hardware and systems that make them practical.">
+  <meta property="og:title" content="Shayan Naghizadeh — From synapse to system">
+  <meta property="og:description" content="Computer architecture, neuromorphic computing, efficient AI systems, and GraphRAG.">
   <meta property="og:url" content="https://shayan-naghizadeh.github.io/">
-  <title>Shayan Naghizadeh — AI × Hardware</title>
+  <title>Shayan Naghizadeh — From synapse to system</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="nav-shell">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#top"><span class="brand-mark">SN.</span><span>SHAYAN NAGHIZADEH</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#research">Research</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#publications">Education &amp; papers</a><a class="nav-cta" href="#contact">Get in touch ↗</a>
-      </div>
-    </nav>
-  </div>
-
+  <header class="masthead"><nav class="nav shell" aria-label="Main navigation"><a class="wordmark" href="#top">SHAYAN<span>_</span>NAGHIZADEH</a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">MENU</button><div class="nav-links" id="navLinks"><a href="#architecture">Architecture</a><a href="#systems">AI systems</a><a href="#work">Selected work</a><a class="contact-link" href="#contact">Contact ↗</a></div></nav></header>
   <main id="main">
-    <header class="hero" id="top">
-      <div class="hero-grid wrap">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="eyebrow-line"></span> AI SYSTEMS <span class="eyebrow-cross">×</span> COMPUTER ARCHITECTURE</div>
-          <h1>Building efficient AI, <em>from model to machine.</em></h1>
-          <p class="hero-lede">I work at the intersection of machine learning systems and computer architecture — connecting intelligent models with the hardware and infrastructure that make them practical.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore selected work <span>↘</span></a>
-            <a class="button button-outline" href="https://github.com/shayan-naghizadeh" target="_blank" rel="noopener noreferrer">GitHub profile <span>↗</span></a>
-          </div>
-          <div class="hero-footnote"><span class="status-dot"></span> RESEARCH-MINDED · SYSTEMS-ORIENTED · HARDWARE-AWARE</div>
-        </div>
-        <div class="system-art reveal" aria-label="Illustration connecting AI systems and hardware">
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
-          <div class="orbit-point point-a"></div><div class="orbit-point point-b"></div><div class="orbit-point point-c"></div>
-          <div class="art-line"></div>
-          <div class="art-core">
-            <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="17" y="17" width="30" height="30" rx="7"/><path d="M24 27h16M24 33h16M24 39h9M32 8v9M32 47v9M8 32h9M47 32h9M15 15l6 6M43 43l6 6M49 15l-6 6M21 43l-6 6"/><circle cx="32" cy="32" r="3"/></svg>
-            <span>AI × HW</span>
-          </div>
-          <div class="art-label art-ai"><b>AI &amp; inference</b><small>MODELS · SERVING · AGENTS</small></div>
-          <div class="art-label art-hw"><b>Hardware &amp; systems</b><small>FPGA · PRECISION · ARCHITECTURE</small></div>
-          <div class="art-caption">ONE CONNECTED STACK <span>01 / 02</span></div>
-        </div>
-      </div>
-    </header>
-
-    <div class="bridge"><div class="wrap bridge-inner"><span class="bridge-label">The connection</span><div class="bridge-flow"><span>ALGORITHMS</span><i>→</i><span>MODEL EFFICIENCY</span><i>→</i><span>SYSTEMS</span><i>→</i><span>HARDWARE</span></div></div></div>
-
-    <section class="section" id="about">
-      <div class="wrap about-grid">
-        <div class="about-stamp reveal"><div class="stamp-top"><span>PROFILE / 01</span><span>AI × ARCHITECTURE</span></div><div class="stamp-monogram">SN<span>.</span></div><div class="stamp-bottom"><span>Computer Engineering<br>Research &amp; Engineering</span><b>MODEL → MACHINE</b></div></div>
-        <div class="about-copy reveal">
-          <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT ME</div>
-          <p class="lead">I enjoy working across the boundary between what a model can learn and what a real system can efficiently run.</p>
-          <p>My background combines computer architecture and low-precision hardware research with hands-on machine learning engineering. I have worked on FPGA-based acceleration of spiking neural networks, quantized Transformer deployment, and production LLM systems.</p>
-          <p>My current interests include efficient inference, hardware-aware machine learning, edge AI, and agentic systems. I am especially interested in turning ideas from model design into practical, resource-aware implementations.</p>
-          <div class="tag-row"><span>Efficient inference</span><span>FPGA acceleration</span><span>LLM systems</span><span>Quantization</span><span>Agentic AI</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section research-section" id="research">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="section-index">02 / RESEARCH DIRECTIONS</div><h2>Two disciplines.<br>One systems mindset.</h2></div><p class="section-intro">I am interested in the complete path from learning and numerical representation to deployment, runtime behavior, and hardware constraints.</p></div>
-        <div class="research-grid">
-          <article class="research-card reveal"><div class="card-top"><span class="card-index">01 — AI SYSTEMS</span><span class="card-symbol teal-symbol">⌘</span></div><h3>LLM inference &amp; AI systems</h3><p>Deploying and operating local and on-premise language models, with an interest in inference serving, multi-GPU execution, and the systems trade-offs behind reliable AI applications.</p><div class="card-tags">vLLM <span>·</span> SGLang <span>·</span> Multi-GPU <span>·</span> RAG</div></article>
-          <article class="research-card reveal"><div class="card-top"><span class="card-index">02 — HARDWARE</span><span class="card-symbol amber-symbol">⌗</span></div><h3>Hardware-aware ML</h3><p>Exploring how numerical formats, quantization, and architectural constraints shape neural networks — from FPGA-based SNN acceleration to efficient model implementation.</p><div class="card-tags">FPGA <span>·</span> Posit arithmetic <span>·</span> Low precision <span>·</span> HLS</div></article>
-          <article class="research-card reveal"><div class="card-top"><span class="card-index">03 — FPGA COMPUTING</span><span class="card-symbol amber-symbol">◈</span></div><h3>FPGA acceleration &amp; low-precision computing</h3><p>Studying efficient neural hardware implementations through FPGA acceleration, Posit arithmetic, and numerical methods for spiking neural network computation.</p><div class="card-tags">FPGA <span>·</span> SNN <span>·</span> Posit <span>·</span> Numerical methods</div></article>
-          <article class="research-card reveal"><div class="card-top"><span class="card-index">04 — EDGE AI</span><span class="card-symbol blue-symbol">▣</span></div><h3>Efficient &amp; edge deployment</h3><p>Bringing trained models into constrained environments through quantization and deployment-aware design, including Transformer-based remaining useful life prediction.</p><div class="card-tags">Quantized Transformers <span>·</span> Edge deployment <span>·</span> Resource constraints</div></article>
-          <article class="research-card reveal"><div class="card-top"><span class="card-index">05 — AGENTIC AI</span><span class="card-symbol teal-symbol">⌘</span></div><h3>Agentic systems &amp; tool use</h3><p>Building practical agents that connect language models to external systems through structured tool and function calling, including MCP-based enterprise integration.</p><div class="card-tags">MCP <span>·</span> Tool calling <span>·</span> Local LLMs</div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="work">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="section-index">03 / SELECTED WORK</div><h2>Research translated<br>into working systems.</h2></div><p class="section-intro">A selection of research, engineering, and implementation work across hardware acceleration and applied AI.</p></div>
-        <div class="work-grid">
-          <article class="work-card reveal"><div class="work-meta"><span class="work-type type-amber">M.Sc. THESIS · HARDWARE</span><span>01 / 04</span></div><h3>FPGA acceleration of spiking neural networks</h3><p>Research on accelerating spiking neural networks on FPGA using the Posit number system, with a focus on low-precision arithmetic and efficient computation.</p><div class="work-bottom"><span>FPGA · SNN · POSIT</span><span>Master's research</span></div></article>
-          <article class="work-card reveal"><div class="work-meta"><span class="work-type type-blue">ACCEPTED PAPER · EDGE AI</span><span>02 / 04</span></div><h3>Quantized Transformer for remaining useful life prediction</h3><p>Edge deployment of quantized Transformer models for remaining useful life prediction. Accepted for presentation at ICEE 2026.</p><div class="work-bottom"><span>TRANSFORMERS · QUANTIZATION</span><span>ICEE 2026</span></div></article>
-          <article class="work-card reveal"><div class="work-meta"><span class="work-type type-teal">INDUSTRY · AGENTIC AI</span><span>03 / 04</span></div><h3>MCP-based HR agent integration</h3><p>Implemented an HR agent using a local language model, function calling, and Model Context Protocol (MCP) to connect conversational requests with a backend HR system.</p><div class="work-bottom"><span>LOCAL LLM · MCP · TOOL CALLING</span><span>Enterprise integration</span></div></article>
-          <article class="work-card reveal"><div class="work-meta"><span class="work-type type-amber">OPEN SOURCE · FPGA</span><span>04 / 04</span></div><h3>CNN deployment with HLS on FPGA</h3><p>Implemented an MNIST CNN workflow from software training to HLS hardware, using fixed-point arithmetic, loop unrolling, and pipelining on a Virtex FPGA.</p><div class="work-bottom"><span>PYTHON · HLS · FIXED POINT</span><a href="https://github.com/shayan-naghizadeh/train2fpga" target="_blank" rel="noopener noreferrer">View repository ↗</a></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="section-index light-index">04 / ENGINEERING EXPERIENCE</div><h2>Building beyond<br>the experiment.</h2></div><p class="section-intro">Applied engineering experience across model serving, data retrieval, and production AI integrations.</p></div>
-        <div class="experience-layout">
-          <aside class="experience-aside reveal"><div class="eyebrow"><span class="eyebrow-line"></span> INDUSTRY PRACTICE</div><p>My engineering work focuses on making modern AI capabilities usable inside real infrastructure — on-premise, resource-aware, and connected to existing systems.</p><div class="aside-mark">FROM PROTOTYPE TO PRODUCTION ↗</div></aside>
-          <div class="timeline reveal">
-            <div class="timeline-item"><div class="timeline-label">PROFESSIONAL EXPERIENCE</div><div class="timeline-content"><h3>AI / MLOps Engineer</h3><p>Working on the deployment and integration of machine learning and large language models in production-oriented environments.</p><ul><li>On-premise LLM deployment with vLLM and SGLang</li><li>Multi-GPU inference environments</li><li>RAG pipelines and vector databases</li><li>Docker-based deployment and operations</li><li>Local LLM integrations with backend services</li><li>MCP and function-calling agent workflows</li></ul></div></div>
-            <div class="timeline-item"><div class="timeline-label">RESEARCH FOUNDATION</div><div class="timeline-content"><h3>Low-precision computing &amp; neural hardware</h3><p>Research experience in FPGA-based neural network acceleration, Posit arithmetic, and numerical methods for efficient spiking neural network computation.</p></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="publications">
-      <div class="wrap">
-        <div class="section-head reveal"><div><div class="section-index">05 / EDUCATION &amp; PUBLICATIONS</div><h2>Academic foundation.</h2></div><p class="section-intro">Graduate study in computer architecture, with research spanning numerical representation, neural hardware, and efficient AI deployment.</p></div>
-        <div class="credentials-grid">
-          <article class="credential-panel reveal"><div class="panel-label">EDUCATION · MASTER'S DEGREE</div><h3>M.Sc. in Computer Engineering</h3><p class="institution">Computer Architecture<br>Amirkabir University of Technology (AUT)</p><div class="thesis"><span>MASTER'S THESIS</span><strong>FPGA-Based Acceleration of Spiking Neural Networks Using the Posit Number System</strong></div></article>
-          <article class="credential-panel reveal"><div class="panel-label">SELECTED PUBLICATIONS</div>
-            <div class="publication"><div class="pub-icon">IEEE</div><div><h4>Low-Precision POSIT Arithmetic for Spiking Neural Networks with Kahan Summation</h4><p>IEEE publication · Low-precision arithmetic for efficient spiking neural network computation.</p></div></div>
-            <div class="publication"><div class="pub-icon">2026</div><div><h4>Edge Deployment of Quantized Transformer Models for Remaining Useful Life Prediction</h4><p>Accepted paper · ICEE 2026 · Quantized Transformer deployment for edge inference.</p></div></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section teaching-section" id="teaching"><div class="wrap teaching-inner reveal"><div><div class="section-index">06 / TEACHING</div><h2>Learning by<br>teaching.</h2></div><div class="teaching-copy"><p>University-level laboratory and workshop instruction, alongside undergraduate teaching-assistant experience.</p><div class="course-list"><span>Computer Architecture Laboratory</span><span>Logic Design Laboratory</span><span>C Programming Workshop</span><span>Operating Systems Laboratory</span></div><p class="teaching-note">Also served as a Teaching Assistant for undergraduate Logic Design / Logic Circuits.</p></div></div></section>
-
-    <section class="contact" id="contact"><div class="wrap contact-inner reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> LET'S CONNECT</div><h2>Interested in efficient AI, hardware-aware ML, or systems research?</h2><p>I am open to research conversations and collaborations at the intersection of machine learning systems and computer architecture.</p></div><a class="button button-primary" href="https://github.com/shayan-naghizadeh" target="_blank" rel="noopener noreferrer">Connect on GitHub ↗</a></div></section>
-  </main>
-  <footer><div class="wrap footer-inner"><span>© <span id="year">2026</span> Shayan Naghizadeh</span><span>AI SYSTEMS × COMPUTER ARCHITECTURE</span><a href="#top">BACK TO TOP ↑</a></div></footer>
-</body>
-</html>
+    <section class="hero" id="top"><div class="shell hero-grid">
+      <div class="hero-copy reveal"><p class="kicker">COMPUTER ARCHITECTURE / AI SYSTEMS</p><h1>From <em>synapse</em><br>to <em>system.</em></h1><p class="hero-intro">I design efficient AI across two scales: the numerical and hardware choices that shape neural computation, and the systems that make modern models useful in practice.</p><div class="hero-actions"><a class="primary" href="#work">Explore the work <span>↓</span></a><a class="quiet" href="https://github.com/shayan-naghizadeh" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+      <div class="hero-diagram reveal" aria-label="A diagram showing the connection from neural computation through hardware to deployed AI systems"><div class="ring r1"></div><div class="ring r2"></div><div class="node neuron">SNN<br><small>SPIKES</small></div><div class="node silicon">FPGA<br><small>PRECISION</small></div><div class="node model">LLM<br><small>TOOLS</small></div><svg viewBox="0 0 560 390" aria-hidden="true"><path d="M98 176 C170 45 248 52 285 190 S412 335 482 202"/><path d="M98 238 C196 358 250 318 285 190 S398 74 482 158"/><circle cx="285" cy="190" r="9"/></svg><p>MODEL DESIGN → NUMERICAL REPRESENTATION → HARDWARE → DEPLOYED INTELLIGENCE</p></div>
+    </div></section>
+    <section class="thesis"><div class="shell"><p>One practice, two perspectives</p><h2>Building AI that respects <span>the machine</span> it runs on — and systems that preserve <span>the intelligence</span> they serve.</h2></div></section>
+    <section class="dual" id="architecture"><div class="shell"><div class="section-label"><span>01</span> NEUROMORPHIC COMPUTING &amp; ARCHITECTURE</div><div class="feature feature-hardware"><div class="feature-copy reveal"><p class="eyebrow">THE HARDWARE LENS</p><h2>When a number format changes the machine.</h2><p>My graduate research investigates efficient neural computation at the boundary of algorithm and architecture: FPGA-based spiking neural networks, low-precision arithmetic, and hardware–software co-design.</p><p>That work includes Posit arithmetic, compensated accumulation, and CETP — a control-encoded tapered-precision format developed to simplify numerical decoding for efficient neural inference.</p><div class="chips"><span>FPGA</span><span>SNN</span><span>POSIT</span><span>CETP</span><span>QUANTIZATION</span></div></div><figure class="feature-art reveal"><img src="assets/neuromorphic-fpga.png" alt="Abstract visualization of spiking neurons flowing into FPGA circuitry"><figcaption>NEURAL DYNAMICS / RECONFIGURABLE SILICON</figcaption></figure></div></div></section>
+    <section class="dual systems" id="systems"><div class="shell"><div class="section-label"><span>02</span> AI SYSTEMS, KNOWLEDGE &amp; AGENTS</div><div class="feature feature-ai"><figure class="feature-art reveal"><img src="assets/agentic-graph.png" alt="Abstract visualization of a language model connected to a knowledge graph and tools"><figcaption>LOCAL MODELS / GRAPH CONTEXT / TOOL USE</figcaption></figure><div class="feature-copy reveal"><p class="eyebrow">THE SYSTEMS LENS</p><h2>Making models useful beyond the prompt.</h2><p>As an AI / MLOps Engineer, I build private AI services around local LLM serving, retrieval, knowledge graphs, and tool-using agents — with deployment constraints, data privacy, and operational reliability in view.</p><p>My recent work spans vLLM and SGLang serving, multi-GPU Transformer execution, GraphRAG with Neo4j, and an MCP-based HR agent connected to backend services.</p><div class="chips blue"><span>VLLM / SGLANG</span><span>GRAPHRAG</span><span>NEO4J</span><span>MCP</span><span>MULTI-GPU</span></div></div></div></div></section>
+    <section class="bridge-work" id="work"><div class="shell"><div class="section-label light"><span>03</span> SELECTED RESEARCH &amp; IMPLEMENTATION</div><div class="work-list">
+      <article class="work-item reveal"><span class="work-no">01</span><div><p class="work-type">M.Sc. THESIS / 2023—2026</p><h3>FPGA-Based Acceleration of Spiking Neural Networks Using the Posit Number System</h3><p>Resource-efficient neural inference through SNN architectures, low-precision computation, and FPGA-oriented design trade-offs.</p></div><span class="work-edge">SNN · FPGA · POSIT</span></article>
+      <article class="work-item reveal"><span class="work-no">02</span><div><p class="work-type">AI SYSTEMS / PRODUCTION</p><h3>Local LLM serving &amp; MCP HR agent</h3><p>Private inference infrastructure with vLLM, SGLang, and TEI; an HR agent using a local JEV LLM, MCP, and tool/function calling.</p></div><span class="work-edge">LLM · MCP · DOCKER</span></article>
+      <article class="work-item reveal"><span class="work-no">03</span><div><p class="work-type">KNOWLEDGE SYSTEMS</p><h3>GraphRAG &amp; text-to-query service</h3><p>Graph-backed retrieval and natural-language access to connected data using embeddings, LangChain, and Neo4j knowledge graphs.</p></div><span class="work-edge">GRAPHRAG · NEO4J</span></article>
+      <article class="work-item reveal"><span class="work-no">04</span><div><p class="work-type">EDGE AI / IEEE ICEE 2026</p><h3>Quantized Transformer deployment for remaining useful life prediction</h3><p>Research on deploying quantized Transformer models under edge-oriented constraints.</p></div><span class="work-edge">TRANSFORMERS · EDGE</span></article>
+      <article class="work-item reveal"><span class="work-no">05</span><div><p class="work-type">OPEN SOURCE</p><h3>train2fpga — CNN training to FPGA workflow</h3><p>An end-to-end workflow spanning training, quantization, optimization, and FPGA-oriented CNN deployment with HLS.</p></div><a class="work-edge link" href="https://github.com/shayan-naghizadeh/train2fpga" target="_blank" rel="noopener noreferrer">VIEW REPOSITORY ↗</a></article>
+    </div></div></section>
+    <section class="credentials"><div class="shell credential-grid"><div class="reveal"><p class="eyebrow">EDUCATION</p><h2>M.Sc. in Computer Engineering</h2><p class="school">Computer Architecture<br>Amirkabir University of Technology (Tehran Polytechnic)<br>2023—2026 · GPA 3.56 / 4.00</p><p class="thesis-note">Thesis supervised by Prof. Morteza Saheb Zamani.</p></div><div class="publications reveal"><p class="eyebrow">SELECTED PUBLICATIONS</p><a href="https://doi.org/10.1109/ICSPIS68676.2025.11551780" target="_blank" rel="noopener noreferrer"><span>01</span> Low-Precision POSIT Arithmetic for Spiking Neural Networks with Kahan Summation <small>IEEE ICSPIS, 2025 ↗</small></a><a href="https://doi.org/10.1109/ICEE70628.2026.11710400" target="_blank" rel="noopener noreferrer"><span>02</span> Edge Deployment of Quantized Transformer Models for Remaining Useful Life Prediction <small>IEEE ICEE, 2026 ↗</small></a><a href="https://doi.org/10.1109/IKT69652.2025.11626726" target="_blank" rel="noopener noreferrer"><span>03</span> Beyond One-Hot: CatBoost for Heating and Cooling Load Prediction <small>IEEE IKT, 2025 ↗</small></a></div></div></section>
+    <section class="teaching"><div class="shell"><p class="eyebrow">TEACHING &amp; ACADEMIC SERVICE</p><div class="teach-grid"><h2>Teaching makes systems thinking explicit.</h2><p>Teaching Assistant at Amirkabir University of Technology for Advanced Computer Architecture, Memory Technologies, Machine Learning, Applied Machine Learning, Distributed Systems, Digital Electronics, and Network Devices Architecture. Laboratory / Workshop Instructor for Computer Architecture, Operating Systems, Logic Design, and C Programming.</p></div></div></section>
+    <section class="contact" id="contact"><div class="shell contact-grid"><div><p class="eyebrow">LET’S CONNECT</p><h2>Research, systems,<br>and the space between.</h2></div><div><p>I’m interested in research and engineering conversations where model efficiency, architecture, and real-world AI systems meet.</p><a href="mailto:s.naghizadeh01@gmail.com">s.naghizadeh01@gmail.com ↗</a><a href="https://github.com/shayan-naghizadeh" target="_blank" rel="noopener noreferrer">github.com/shayan-naghizadeh ↗</a></div></div></section>
+  </main><footer><div class="shell"><span>© <span id="year">2026</span> SHAYAN NAGHIZADEH</span><span>FROM SYNAPSE TO SYSTEM</span></div></footer>
+</body></html>
