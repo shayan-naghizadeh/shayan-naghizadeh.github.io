@@ -31,3 +31,9 @@ body.theme-systems:before{background-image:url("assets/systems-field.png")}
 footer{position:relative;background:rgba(2,3,4,.89);color:#c8ccc8;border-color:rgba(255,255,255,.18)}
 @media(max-width:800px){.navlinks{background:#050607;border-color:rgba(255,255,255,.2)}.home-hero,.page-hero,.thesis-hero{min-height:0}.home-map,.content{background:rgba(3,4,5,.84)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+/* More breathing room inside image-overlay composition. */
+.home-hero .shell,.page-hero .shell{padding-right:clamp(3rem,9vw,10rem)}
+.dual-identity a{padding:28px clamp(2.25rem,4vw,4rem) 30px 30px}
+.teaching-grid li span{line-height:1.58}
+.teaching-grid li span a{display:inline-block;margin-top:3px;color:#f6f7f2;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:3px}
+@media(max-width:800px){.home-hero .shell,.page-hero .shell{padding-right:0}.dual-identity a{padding:24px}.teaching-grid li span a{margin-top:1px}}
