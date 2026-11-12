@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
