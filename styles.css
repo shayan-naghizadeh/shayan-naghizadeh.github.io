@@ -64,3 +64,6 @@ body.education-page .page-hero .shell,body.education-page .content.shell{padding
 @media(max-width:800px){
   .page-grid a,.project-list article,.pubs article,.teaching-grid li,.contact-page a,.skill-matrix div,.reference-list article{row-gap:10px}
 }
+/* Global left text inset: matches the Education page on every page. */
+.home-hero .shell,.page-hero .shell,.content.shell,.home-map.shell,footer .shell{padding-left:3rem}
+@media(max-width:800px){.home-hero .shell,.page-hero .shell,.content.shell,.home-map.shell,footer .shell{padding-left:2rem}}
