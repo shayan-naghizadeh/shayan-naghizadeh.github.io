@@ -52,3 +52,15 @@ body.education-page .page-hero .shell,body.education-page .content.shell{padding
 .education-card dt{padding-right:1rem}
 .education-card dd{padding-left:0}
 @media(max-width:800px){.education-card dl{grid-template-columns:1fr;column-gap:0}.education-card dt{padding:20px 0 5px;border-bottom:0!important}.education-card dd{padding:0 0 20px}.education-card dd:last-child{padding-bottom:20px}}
+/* Site-wide label/value spacing, matching the Education page. */
+@media(min-width:801px){
+  .page-grid a{column-gap:3rem}
+  .project-list article,.pubs article{column-gap:3rem}
+  .teaching-grid li{column-gap:3rem}
+  .contact-page a{column-gap:3rem}
+  .skill-matrix div{column-gap:3rem}
+  .reference-list article{column-gap:3rem}
+}
+@media(max-width:800px){
+  .page-grid a,.project-list article,.pubs article,.teaching-grid li,.contact-page a,.skill-matrix div,.reference-list article{row-gap:10px}
+}
