@@ -43,3 +43,6 @@ footer{position:relative;background:rgba(2,3,4,.89);color:#c8ccc8;border-color:r
 .dual-identity a{padding-right:var(--text-safe-right)}
 .page-grid a,.project-list article,.pubs article,.teaching-grid li,.contact-page a,.reference-list article,.experience-panel li{padding-right:clamp(3rem,6vw,6rem)}
 @media(max-width:800px){:root{--text-safe-right:2rem}.home-hero .shell,.page-hero .shell,.content.shell,.home-map.shell,footer .shell{padding-right:var(--text-safe-right)}.dual-identity a{padding-right:2rem}.page-grid a,.project-list article,.pubs article,.teaching-grid li,.contact-page a,.reference-list article,.experience-panel li{padding-right:2rem}}
+/* Education page only: 3rem space before all main text. */
+body.education-page .page-hero .shell,body.education-page .content.shell{padding-left:3rem}
+@media(max-width:800px){body.education-page .page-hero .shell,body.education-page .content.shell{padding-left:2rem}}
